@@ -1,0 +1,122 @@
+<main>
+  <div class="row">
+
+    <!-- errors -->
+
+    <div class="card-block">
+
+      <h1 class="title">Elenco dei defunti</h1>
+      <form class="search-form" action="dashboard.php" method="get" name="defunti">
+        <label for="search_dead">Cerca:</label>
+        <input type="text" id="search_dead" class="search" name="search_dead" />
+        <input type="submit" class="button" value="Cerca">
+      </form>
+      <div class="tabella">
+
+        <table aria-label="tabella dei defunti">
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Cognome</th>
+              <th scope="col" class="datamorte">Data di morte</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <!-- dashboard -->
+        </table>
+      </div>
+
+    </div>
+
+
+    <div class="card-block edit-death ">
+
+      <h1 class="title">Modifica il morto</h1>
+      <div id="edit" class="edit">
+
+        <!-- imgtoreplace -->
+        <form name="edit" action="dashboard_wrap.php" method="POST" onsubmit="return validateEditDead()"
+          enctype="multipart/form-data">
+
+          <label for="img-edit">Immagine:</label>
+          <span><input type="file" class="imgg" id="img-edit" name="img_edit" accept="image/*"/></span>
+
+          <input type="hidden" id="id" name="id">
+
+          <label for="name">Nome:</label>
+          <span><input type="text" id="name" name="name_edit" onblur="validateName('name')"></span>
+
+          <label for="surname">Cognome:</label>
+          <span><input type="text" id="surname" name="surname_edit" onblur="validateName('surname')"></span>
+
+          <label for="born_date">Data di nascita:</label>
+          <span><input type="date" id="born_date" name="born_date_edit" onblur="validateDate('born_date')"></span>
+
+          <label for="death_date">Data di morte:</label>
+          <span><input type="date" id="death_date" name="death_date_edit" onblur="validateDate('death_date','born_date')"></span>
+
+          <label for="reminder_phrase">Motto:</label>
+
+
+
+          <textarea name="reminder_phrase" id="reminder_phrase"></textarea>
+
+          <input class="button" type="submit" name="update" id="update" value="Modifica">
+
+        </form>
+      </div>
+    </div>
+
+    <div class="card-block add-morto">
+      <h1 class="title">Aggiungi un defunto</h1>
+      <form name="add" action="dashboard_wrap.php" class="form" method="post" onsubmit="return validateAddDead()"
+        enctype="multipart/form-data">
+        <label for="img-add">Immagine:</label>
+        <span><input type="file" class="imgg" id="img-add" name="img" accept="image/*" onblur="validatePATH('img-add')"/></span>
+        <label for="nome">Nome:</label>
+        <span><input type="text" id="nome" name="name" onblur="validateName('nome')"/></span>
+
+        <label for="cognome">Cognome:</label>
+        <span><input type="text" id="cognome" name="surname" onblur="validateName('cognome')"/></span>
+
+        <label for="born_d">Data di nascita:</label>
+        <span><input type="date" id="born_d" name="born_date" onblur="validateDate('born_d')"/></span>
+
+        <label for="death_d">Data di morte:</label>
+        <span><input type="date" id="death_d" name="death_date" onblur="validateDate('death_d','born_d')"/></span>
+
+        <label for="descriprtion">Motto:</label>
+        <textarea id="descriprtion" name="rem" maxlength="499"></textarea>
+
+        <input type="submit" class="button" name="add" value="Aggiungi" />
+      </form>
+    </div>
+    <div class="card-block">
+      <h1 class="title">I tuoi cordogli</h1>
+      <form class="search-form" action="#" method="get" name="cordogli">
+        <label for="search_cordogli">Cerca:</label>
+        <input type="text" id="search_cordogli" class="search" name="search_cordogli" />
+        <input type="submit" class="button" value="Cerca">
+      </form>
+
+      <div class="tabella">
+        <table aria-label="tabella dei cordogli">
+          <thead>
+
+            <tr>
+              <th scope="col" class="mailcordoglio">Utente:</th>
+              <th scope="col">Deceduto:</th>
+              <th scope="col">Cordoglio:</th>
+              <th></th>
+            </tr>
+          </thead>
+          <!-- cordogli -->
+        </table>
+      </div>
+    </div>
+  </div>
+  <form action="dashboard.php" class="form" method="post" name="logout" enctype="multipart/form-data">
+    <input type="submit" class="button" name="logout" value="Logout">
+  </form>
+</main>

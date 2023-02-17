@@ -1,0 +1,108 @@
+/* import styles.css */
+@import url(styles.css);
+:root {
+  --link-color: black;
+  --header-bg-color: white;
+  --footer-bg-color: white;
+  --text-color: black;
+  --bg-color: white;
+  --color-1: white;
+  --color-2: white;
+  --color-3: white;
+  --card-bg-color: white;
+  /* --visited-link-color: #1600cb; */
+  --visited-link-color: black;
+}
+
+
+
+#title-on-img {
+  text-align: center;
+  height: 150px;
+}
+#title-on-img h2 {
+  display: none;
+}
+.infobox {
+  margin: 0 auto;
+}
+
+h2.title {
+  text-align: center;
+  margin: 10px;
+}
+h3.title {
+  margin: 5px;
+}
+.service-home {
+  margin-top: 20000px;
+}
+.card {
+  box-shadow: 0 0 0 0;
+}
+
+.page-title {
+  padding: 0;
+  margin: 0;
+}
+.page-title h1 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.altri-servizi {
+  margin-top: 1000px;
+}
+.history-section-text p {
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+a[href^="epigrafe"] img {
+  display: block;
+}
+.card:hover {
+  box-shadow: 0 0 0 0;
+}
+
+img.epigrafe-img {
+  display: block;
+}
+
+.card.epigrafe {
+  width: 80%;
+}
+
+/* inutile tentativo di mettere i break dopo le carte */
+
+.card {
+  display: block;
+  break-inside: avoid-page;
+}
+
+.card:nth-child(2n){
+  page-break-after: always;
+  break-after: page;
+}
+
+.card:nth-child(2n) {
+  grid-column: 2;
+}
+
+.card img.obituary-img {
+  display: block;
+  /* break-before: auto;
+  break-after: auto; */
+  break-inside: avoid;
+}
+
+.row {
+  display: grid;
+}
+img, .breadcrumb, nav, .login-message,.goup, #come-raggiungerci, .scrivici, .loginbox, form, footer {
+  display: none;
+}

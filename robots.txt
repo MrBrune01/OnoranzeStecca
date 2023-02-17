@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /html/
+Disallow: /php/dashboard.php
+
+Sitemap: https://onoranze.stecca.dev/sitemap.xml

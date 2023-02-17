@@ -1,0 +1,45 @@
+<main>
+    <div class="page-title">
+        <h1>Gestione account di <username-to-replace></username-to-replace></h1>
+    </div>
+    <h2 class="title"><!-- account_mail --></h2>
+    <div class="row">
+        <div class="card-block">
+            <!-- userzone -->
+            <form action="account.php" class="form" method="post" name="change-username" enctype="multipart/form-data" onsubmit="return editUsername()">
+                <label for="username">Username:</label>
+                <span><input type="text" id="username" name="username" maxlength="50" onblur="validateUsername()">
+                <!-- errors -->
+                </span>
+                <input type="submit" class="button" name="change-username" value="Cambia username">
+            </form>
+            
+            <form action="account.php" class="form" method="post" name="delete-account" enctype="multipart/form-data">
+                <input type="submit" class="button red" name="delete-account" value="Elimina account">
+            </form>
+            <!-- userzone -->
+            <h1 class="title">I tuoi cordogli</h1>
+            <form class="search-form" action="#" method="get">
+                <label for="search_cordogli">Cerca:</label>
+                <input type="text" name="search_cordogli" id="search_cordogli" />
+                <input type="submit" class="button" value="Cerca">
+            </form>
+
+            <div class="tabella">
+                <table>
+                    <tr>
+                        <th>Username</th>
+                        <th>Cordoglo </th>
+                        <th>Deceduto </th>
+                        <th></th>
+                    </tr>
+                    <!-- cordogli -->
+                </table>
+            </div>
+
+            <form action="account.php" class="form" method="post" name="logout" enctype="multipart/form-data">
+                <input type="submit" class="button" name="logout" value="Logout">
+            </form>
+        </div>
+    </div>
+</main>

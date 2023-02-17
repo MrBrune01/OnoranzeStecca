@@ -1,0 +1,18 @@
+<main>
+  <div class="loginbox">
+    <h1>Registrati</h1>
+    <form class="form" name="validatedForm" onsubmit="return validateRegister()" action="reg_wrap.php" method="post">
+      <p>Mail</p>
+      <span><input class="inputext" type="email" id="email" name="mail" placeholder=" Inserisci Mail" onblur="validateEmail()"></span>
+      <p>Username</p>
+      <span><input class="inputext" type="text" id="username" name="username" placeholder=" Inserisci Username" onblur="validateUsername()"></span>
+      <p>Password</p>
+      <span><input type="password" name="password1" id="password" placeholder=" Inserisci Password" onblur="validatePassword()"></span>
+      <p>Repeat password</p>
+      <span><input type="password" name="password2" id="password1" placeholder=" Reinserisci Password" onblur="validateSecondPassword()"></span>
+      <input class="button" type="submit" name="submit" value="Registrati">
+      <!-- errors -->
+    </form>
+    <p>Sei già registrato? <a href="accedi.php">Premi qui</a></p>
+  </div>
+</main>

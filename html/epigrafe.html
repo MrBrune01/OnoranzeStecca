@@ -1,0 +1,52 @@
+<main>
+  <div class="page-title">
+    <h1>Epigrafe di <!-- epigrafe_nome --></h1>
+  </div>
+  <div class="row">
+    <div class="card epigrafe">
+      <img class="epigrafe-img" src="<img-to-replace></img-to-replace>" alt="Epigrafe di <!-- epigrafe_nome -->">
+      <div class="container">
+        <h2><!-- epigrafe_nome --></h2>
+        <p class="date">
+        <h2>di anni: <!-- epigrafe_eta --></h2>
+        </p>
+        <p class="date">Nato il: <born-date-to-replace></born-date-to-replace></p>
+        <p class="date">Morto il: <death-date-to-replace></death-date-to-replace></p>
+        <p class="description"><reminder-phrase-to-replace></reminder-phrase-to-replace></p>
+      </div>
+      <!-- cordoglio_zone -->
+      <div class="row block-cordoglio-form">
+        <form action="epigrafe_wrap.php?id=<id-to-replace></id-to-replace>" class="form" method="post" name="add"
+          enctype="multipart/form-data">
+
+          <label for="message">Frase di cordoglio:</label>
+          <span><textarea class="message" id="message" name="message" maxlength="500"></textarea></span>
+
+          <input type="hidden" name="id" value="<id-to-replace></id-to-replace>">
+
+          <input type="submit" class="button" name="add" value="Add">
+        </form>
+      </div>
+      <!-- cordoglio_zone -->
+      <div class="center">
+        <a href="whatsapp://send?text=https://onoranze.stecca.dev/epigrafe.php?id=<id-to-replace></id-to-replace>"
+          data-action="share/whatsapp/share"><img class="share" src="images/wp.webp"></a>
+        <a
+          href="https://www.facebook.com/sharer.php?u=https://onoranze.stecca.dev/epigrafe.php?id=<id-to-replace></id-to-replace>"><img
+            class="share" src="images/fb.webp"></a>
+        <a href="tg://msg_url?url=https://onoranze.stecca.dev/epigrafe.php?id=<id-to-replace></id-to-replace>"><img
+            class="share" src="images/tg.webp"></a>
+      </div>
+    </div>
+    <div class="row side-row">
+      <h2 class="title">Messaggi di cordoglio:</h2>
+      <!-- messaggi_cordoglio -->
+    </div>
+  </div>
+
+
+  <div class="cordogli">
+
+  </div>
+
+</main>

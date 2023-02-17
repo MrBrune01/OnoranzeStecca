@@ -1,0 +1,8 @@
+Sender: lollo@it.aaa
+Name: Ciao ciao
+Message: aaa
+
+Sender: aa@ssa.it
+Name: Ciao aa
+Message: aa
+

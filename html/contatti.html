@@ -1,0 +1,50 @@
+<main>
+  <div class="page-title">
+    <h1>Contatti</h1>
+  </div>
+  <h2 class="title">Onoranze Funebri Stecca</h2>
+  <div class="card card-contatti">
+    <div id="dove-siamo">
+      <h3>Dove siamo</h3>
+      <p>Sede di Altivole:</p>
+      <address>
+        Via Roma, 14<br />
+        31030 TV<br />
+      </address>
+      <a href="mailto:info@stecca.dev">
+        <p>info@stecca.dev</p>
+      </a>
+      <a href="tel:+393333333333" class="phone">
+        <p>tel: 3333 333 333</p>
+      </a>
+    </div>
+    <div id="orari">
+      <h3>Orari di apertura</h3>
+      <p>
+        Lunedì - Venerdì: 8:00 - 12:00 / 14:00 - 18:00<br />
+        Sabato: 8:00 - 12:00
+      </p>
+    </div>
+    <div id="come-raggiungerci">
+      <h3>Come raggiungerci</h3>
+      <iframe id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.0481281937414!2d11.961236915567014!3d45.750181079105346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47792702ec624181%3A0x86bcc5ae2a29da67!2sTradizionale%20Sagra%20d%E2%80%99agosto%20di%20Altivole!5e0!3m2!1sit!2sit!4v1673707003671!5m2!1sit!2sit"
+        allowfullscreen="" aria-hidden="false" aria-label="Mappa della nostra sede"></iframe>
+    </div>
+  </div>
+  <div class="card card-contatti scrivici">
+    <h3>Scrivici</h3>
+    <form action="#" method="post" id="scrivici-form">
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" required />
+      <label for="cognome">Cognome</label>
+      <input type="text" name="cognome" id="cognome" required />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+      <label for="messaggio">Messaggio</label>
+      <textarea name="messaggio" id="messaggio" cols="30" rows="10" required></textarea>
+      <input class="button" type="submit" name="submit" value="Invia" />
+      <!-- errors -->
+    </form>
+  </div>
+</main>
