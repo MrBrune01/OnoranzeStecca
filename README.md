@@ -1,6 +1,6 @@
 <h1 align="center">Onoranze Funebri</h1>
 <p align="center"> Onoranze Funebri is a website developed for the UniPD Web Technologies course.</p>
-<h3 align="center"><img src="https://onoranze.stecca.dev/logo/png/logo-no-background.png" alt="logo" ></h3>
+<h3 align="center"><img width="25%" src="https://onoranze.stecca.dev/logo/png/logo-no-background.png" alt="logo" ></h3>
 
 
 ## Description
@@ -15,6 +15,9 @@ Promote the agency services
 * Obituary
 
 List all the deads 
+
+## Achievements
+This project was graded 30/30
 
 ## Build
 
