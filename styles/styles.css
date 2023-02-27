@@ -381,41 +381,6 @@ p {
 	width: 100%;
 }
 
-.phone-numbers {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	padding: 0.5em;
-}
-
-.phone-numbers .phone {
-	display: flex;
-	padding: 1em;
-	flex-direction: column;
-	align-items: center;
-	border-radius: 0.5em;
-	margin: 0.5em 5% 2em 5%;
-	transition: 0.5s ease-in-out background-color;
-	background: var(--color-2);
-	font-family: var(--serif);
-}
-
-.phone-numbers .phone:hover {
-	background-color: var(--color-1);
-}
-
-.phone-numbers h3 {
-	font-size: 3em;
-}
-
-.phone-numbers h4 {
-	font-size: x-large;
-	margin: 0;
-	padding: 0.2em;
-	font-family: var(--sans);
-}
-
 .row {
 	display: flex;
 	flex-wrap: wrap;
