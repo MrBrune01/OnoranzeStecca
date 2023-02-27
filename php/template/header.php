@@ -14,7 +14,7 @@ if (isset($script)) {
     $DOM = str_replace('<script></script>', '', $DOM);
 }
 if (isset($image)) {
-    $DOM = str_replace('<meta property="og:image" content="https://onoranze.stecca.dev/logo/png/preview.png" />', '<meta property="og:image" content="https://onoranze.stecca.dev/necrologio/' . $image . '">', $DOM);
+    $DOM = str_replace('<meta property="og:image" content="https://onoranze.stecca.dev/logo/png/preview.png" />', '<meta property="og:image" content="https://onoranze.stecca.dev/necrologio/' . $image . '" />', $DOM);
 }
 if (isset($_GET['id'])) { //se non trova epigrafe non fa niente giustamente
     $DOM = str_replace('epigrafe.php', 'epigrafe.php?id=' . $_GET['id'], $DOM);

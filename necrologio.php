@@ -31,7 +31,7 @@ function make_board($deads_to_print)
 
     $CARD .= ' 
             <div class="card">
-            <a href="epigrafe.php?id=' . $id . '"> <img class="obituary-img" src="' . $img . '" alt=""></a>
+            <a href="epigrafe.php?id=' . $id . '"> <img class="obituary-img" src="' . $img . '" alt="" /></a>
               <div class="container">
               <a href="epigrafe.php?id=' . $id . '"><h2>' . $name . " " . $surname . '</h2></a>
                   <h2>di anni: ' . $eta->format('%Y') . '</h2>

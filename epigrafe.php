@@ -42,7 +42,7 @@ try {
   if (is_logged())
     $DOM = str_replace('<!-- cordoglio_zone -->', '', $DOM);
   else
-    $DOM = edit_page($DOM, '<!-- cordoglio_zone -->', '<div class="login-message"><p>Effettua il <a href="accedi.php"> <span lang=\"en\">login</span></a> per lasciare un messaggio di cordoglio</p></div>');
+    $DOM = edit_page($DOM, '<!-- cordoglio_zone -->', '<div class="login-message"><p>Effettua il <a href="accedi.php"> <span lang="en">login</span></a> per lasciare un messaggio di cordoglio</p></div>');
   $DOM = str_replace('<!-- epigrafe_nome -->', $p_name . " " . $p_surname, $DOM);
   $DOM = str_replace('<!-- epigrafe_eta -->', $p_eta->format('%Y'), $DOM);
   $DOM = str_replace('<born-date-to-replace></born-date-to-replace>', dead_manager::timestamp_to_date_italian($p_born_date), $DOM);
