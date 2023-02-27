@@ -37,7 +37,7 @@ switch ($title) {
         break;
 }
 if (str_contains($title, "Epigrafe di")) {
-    $DOM = str_replace('<!-- <ul-to-replace></ul-to-replace> -->', '<ul><li><a href="index.php"><span lang="en"> Home </span></a></li><li><a href="necrologio.php">Necrologio</a></li><li>Epigrafe</li>', $DOM);
+    $DOM = str_replace('<!-- <ul-to-replace></ul-to-replace> -->', '<ul><li><a href="index.php"><span lang="en"> Home </span></a></li><li><a href="necrologio.php">Necrologio</a></li><li>Epigrafe</li></ul>', $DOM);
 }
 require_once "php/backend/auth.php";
 session_start();
