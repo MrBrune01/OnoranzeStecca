@@ -98,6 +98,20 @@ p {
 	padding: 0.5em;
 }
 
+.skip-to-main-content-link {
+    font-size: 0;
+	position: absolute;
+	left: -9999px;
+	transition: left 0.3s ease-in-out;
+  }
+
+.skip-to-main-content-link:focus {
+font-size:  1.5em;
+left: 50%;
+transform: translateX(-50%);
+opacity: 1;
+}
+
 .top-nav {
 	display: flex;
 	background-color: var(--header-bg-color);

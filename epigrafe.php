@@ -52,6 +52,10 @@ try {
   $DOM = str_replace('<id-to-replace></id-to-replace>', $p_id, $DOM);
   $DOM = str_replace('<!-- messaggi_cordoglio -->', make_board(condolences_manager::get_by_dead($p_id)), $DOM);
 
+  if (condolences_manager::condolance_exists(get_session_user(), $p_id)){
+    $DOM = str_replace("Aggiungi", "Modifica", $DOM);
+  }
+
   echo ($DOM);
 } catch (Exception $e) {
   server_error();
