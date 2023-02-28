@@ -40,5 +40,10 @@ class condolences_manager extends Manager
         db::run_query("INSERT IGNORE INTO cordoglio (username,message,dead_id) values (?,?,?);", $user, $message, $id);
     }
 
+    public static function condolance_exists($user, $dead_id)
+    {
+        return db::run_query("SELECT * FROM cordoglio where username = ? AND dead_id = ?", $user, $dead_id) ? true : false;
+    }
+
 }
 ?>
